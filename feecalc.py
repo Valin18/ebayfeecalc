@@ -48,6 +48,6 @@ clear()
 print("Satış Fiyatı: " + str(sell_price) + " Alış Fiyatı: " + str(take_price) + " Reklam Fiyatı: " + str(promote_price) + "\n\n(Reklam Dahil Değil) Alınan Fee Değeri: " + str(round(fee_equal, 2)) + "\n\n(Reklam Dahil) Alınan Fee Değeri: " + str(round(fee_promote_equal, 2)))
 sell_price = sell_price - fee_equal
 print("\nSatıştan sonra size kalacak miktar: " + str(round(sell_price, 2)))
-sell_price = sell_price - take_price
+sell_price = sell_price - take_price - promote_price
 print("\nSatıştan edilecek ortalama net kâr: " + str(round(sell_price, 2)) + "\n")
 
